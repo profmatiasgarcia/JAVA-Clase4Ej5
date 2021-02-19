@@ -1,0 +1,48 @@
+package ejMVC2;
+/**
+ * @author Prof Matias Garcia.
+ * <p> Copyright (C) 2017 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
+ * - con licencia GNU GPL3.
+ * <p> Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la
+ * Licencia Pública General de GNU según es publicada por la Free Software Foundation, 
+ * bien con la versión 3 de dicha Licencia o bien (según su elección) con cualquier versión posterior. 
+ * Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA, 
+ * incluso sin la garantía MERCANTIL implícita o sin garantizar la CONVENIENCIA PARA UN PROPÓSITO
+ * PARTICULAR. Véase la Licencia Pública General de GNU para más detalles.
+ * Debería haber recibido una copia de la Licencia Pública General junto con este programa. 
+ * Si no ha sido así ingrese a <a href = "http://www.gnu.org/licenses/"> GNU org </a>
+ */
+public class Modelo {
+
+    private double acumulador;
+    private double actual;
+
+    public Modelo() {
+        acumulador = 0;
+        actual = 0;
+    }
+
+    public void setAcumulador(double acumulador) {
+        this.acumulador = acumulador;
+    }
+
+    public void setActual(double actual) {
+        this.actual = actual;
+    }
+
+    public double getSuma() {
+        return acumulador + actual;
+    }
+
+    public double getResta() {
+        return acumulador - actual;
+    }
+
+    public double getProducto() {
+        return acumulador * actual;
+    }
+
+    public double getCociente() {
+        return acumulador / actual;
+    }
+}
